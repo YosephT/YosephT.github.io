@@ -6,17 +6,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Personal website for yoseph tesfagaber">
+    <meta name="author" content="Yoseph Tesfagaber">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Yoseph Tesfagaber</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- Flexslider CSS -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,70 +40,228 @@
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <div id="wrapper">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Yoseph Tesfagaber</a>
+            </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#" class="white" onmouseover="toggleLogo('red')" onmouseout="toggleLogo('white')">
-                        Yoseph Tesfagaber
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#experience">Work Experience</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h2>Hi, i'm</h2>
+                <h1>Yoseph Tesfagaber</h1>
+                <hr>
+                <p>I'm a software engineer currently living in Waltham, MA</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Who Am I?</h2>
+                    <hr class="light">
+
+                    <p class="text-faded">Hello! My name is Yoseph Tesfagaber. I'm currently attending Brandeis University going into my senior year working towards my bachelors degree in Computer Science and Business. I started my programming journey on my first day in university and I've never looked back!</p>
+
+                    <p class="text-faded">I'm constantly pushing my boundaries and trying to learn new software developement techniques. I spend much of my free time tinkering and experimenting with all the wonderful technology out in the world.  </p>
+
+                    <p class="text-faded"> I am actively fielding full-time offers beginning Summer 2016 and am willing to relocate. If you would be interested in hiring me, please email me using the contact information at the bottom of this site, or at Yoseph@brandeis.edu .  </p>
+
+
+                    <a href="#contact" class="btn btn-default btn-xl">Contact Me!</a>
+                    <hr class="light">
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3">
+                            <img src="img/ProfilePic.jpg" class="img-responsive img-circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading"> Projects!</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slick-carousel">
+                <div class="row">
+                    <div class="col-lg-6"> <img class="img-responsive" src="img/SurveyorSmall.png"/> </div>
+                    <div class="col-lg-5">
+                        <h3 style="color:white;"> Surveyor </h3>
+                        <p> A marketing tool whose primary target is college professors and students, Surveyor is a tool to make survey collection easy. </p>
+                        <p> Surveyor was produced as part of a software engineering class by 4 students and I am currently continuing this project into my senior year.</p>
+                        <p> Tools: Ruby on Rails, Javascript, PostgreSQL, Heroku </p>
+                        <p> Repo status: <a href="https://github.com/SurveyorTeam/Surveyor">Public</a></p> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6"> <img class="img-responsive" src="img/GenrefySmall.png"/></div>
+                    <div class="col-lg-5">
+                        <h3 style="color:white;"> Genrefy </h3>
+                        <p> Genrefy allows users to turn automatically turn large Spotify 
+                        playlists into smaller, organized playlists with a click of a button. </p>
+                        <br>
+                        <p> Tools: Ruby on Rails, Javascript </p>
+                        <br>
+                        <p> Repo status: Private (to be released early September)</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Work Experience</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h3> <strong> Goldman Sachs </strong> </h3>
+                    <h4> <strong> Summer Technology Analyst </strong> </h4>
+                    <ul>
+                        <li><p> Summer project involves developing new key functionality as a full stack web developer for a framework utilizing Java, SQL, AngularJS, and HTML/CSS</p></li>
+                    </ul>
+
+                    <br>
+                    <h3> <strong> Brandeis University, Library and Technology Services </strong> </h3>
+                    <h4> <strong> Help Desk Manager </strong> </h4>
+                    <ul>
+                        <li><p> Manage a team of 40 technicians that diagnose and repair computer issues </p></li>
+                        <li><p> Create and administer technical training of new and returning employees as well as handle interpersonal and professional disputes </p></li>
+                        <li><p> Currently developing an internal tool to assist employees in communicating and managing workflow </p></li>
+                        <li><p> Facilitate and complete University-wide projects to ease technology related issues </p></li>
+                    </ul>
+
+                    <br>
+
+                    <h3> <strong> Brandeis University, Library and Technology Services </strong> </h3>
+                    <h4> <strong> Help Desk Technician </strong> </h4>
+                    <ul>
+                        <li><p> Provide first tier technology and software support to faculty, staff and students </p></li>
+                        <li><p> Assist in troubleshooting and repair of hardware devices and software programs </p></li>
+                        <li><p> Troubleshoot campus wide printer and wireless network issues </p></li>
+                    </ul>
+
+                    <br>
+ 
+                    <h3> <strong> Brandeis University, Student Financial Services </strong> </h3>
+                    <h4> <strong> Student Loans Assistant </strong> </h4>
+                    <ul>
+                        <li><p> Assist in all aspects of student loans, including posting loans and reconciliation </p></li>
+                        <li><p> Produce and distribute federal disbursement notification letters, meeting all federal guidelines and compliance requirements  </p></li>
+                        <li><p> Reconciling internal databases with external and Federal systems </p></li>
+                        <li><p> Analyzing and auditing financial spreadsheets for internal reporting </p></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Me!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>415-568-1832</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <a href="mailto:yoseph@brandeis.edu"><p style="color:white;">yoseph@brandeis.edu</p></a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <a href="https://www.linkedin.com/in/yosephtesfagaber">
+                    <i class="fa fa-linkedin fa-3x wow bounceIn" style="color:white;"></i>
+                    <p style="color:white;"> LinkedIn</p>
                     </a>
-                </li>
-                <li>
-                    <a href="index.html">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#">PORTFOLIO</a>
-                </li>
-                <li>
-                	<a href="#">CONTACT</a>
-            </ul>
+                </div>
+            </div>
         </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-        	<div class="section">
-	            <div class="container-fluid">
-	                <div class="row">
-	                    <div class="col-lg-12">
-                            <img class="circular" src="images/Profile Picture Prof.jpg" alt="Profile image"/>
-	                        <h2 style="color:black" class="customh1"><b>Yoseph Tesfagaber, Computer Science Student</b></h1>
-	                        <br>
-	                        <p>Hello! My name is Yoseph Tesfagaber. I'm currently a student at Brandeis University going into my senior year working towards my bachelors degree in Computer Science and Business. I started my programming journey on my first day in university and I've never looked back!</p>
-	                        
-	                        <p>My venture into the world of Computer Science started with building a strong theoretical foundation and I have delved into Human Computer Interaction. My current exploration has lead me into the world of Ruby on Rails, AngularJS and general web development. I love to pick up new projects, and I'm currently looking to supplement my classes with independent studies.</p>
-
-	                        <p>Other noteworthy (and definitely less noteworthy) skills include: Java, Matlab, Git.</p>
-
-						 
-
-	                        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <!-- Slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slick-carousel').slick({
+            dots: true,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+      });
     </script>
 
 </body>
